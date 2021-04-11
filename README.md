@@ -19,7 +19,6 @@ Then we have a list
 
 ```
 
-This project was only made to explore the functioning of regular expresions.
 
 
 
