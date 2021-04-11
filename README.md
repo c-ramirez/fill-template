@@ -1,5 +1,5 @@
 # fill-template
-This project inserts values in a template using regular expressions
+Given a template with a certain format, inserts values in a template using regular expressions
 The types of permitted values are: 
  - Parameters: single value, only appear once in the template. &P{}
  - Fields: list of values &L[]{{  &F{}  }} 
