@@ -1,21 +1,20 @@
 # fill-template
-Given a template with a certain format, inserts values in a template using regular expressions
-The types of permitted values are: 
- - Parameters: single value, only appear once in the template. &P{}
- - Fields: list of values &L[]{{  &F{}  }} 
+Given a template with a certain format, inserts values using regular expressions
+There are three types supported:
+- Parameters: Must have unique id in the template. 
+  Example: &P{parameter1}
+- List: All the content inside the list block will be repeated as many times as rows defined in the model 
+  Example: &L[list]{{ 
+    test
+  }}
+- Fields: Must have unique id inside the list block.
+  Example: &L[list]{{
+    test &F{field1}
+  }}
 
-A sample template is:
-
+Execute 
 ```
-This is a sample text, here is the first parameter &P{parameter1}, here is the second &P{parameter2} here 
-is the first parameter again &P{parameter1}.
-
-Then we have a list 
-&L[list]{{
-	- This text should be repeated.
-	- You can pass inner fields inside this list : (&F{field1})  : (&F{field2}) 
-	- Another line
-}}
+mvn clean install
 
 ```
 

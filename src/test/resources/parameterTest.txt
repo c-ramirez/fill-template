@@ -1,0 +1,5 @@
+This is a sample text, these are the parameters for this test:
+- &P{parameter1}
+- &P{parameter2}
+This parameter is repeated &P{parameter1}.
+-----------------------------------------------------------------------------------------------
